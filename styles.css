@@ -1,0 +1,250 @@
+body{
+    background-color: black;
+    font-family: sans-serif;
+    margin: 0;
+    font-family: 'Amatic SC', cursive;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1, 25vw;
+    grid-auto-rows: repeat(5, 25vh);
+    grid-template-areas: 
+        "header"
+        "header"
+        "main"
+        "section"
+        "footer"  
+}
+
+header{
+    align-items: center;
+    background-color: white;
+    /* display: flex; */
+    grid-area: header;
+    justify-content: space-between;
+    height: 150px;
+}  
+
+.header-geral {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.menu-hamburguer{
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin: 5px 0 0 5px; */
+    padding: 3px;
+    width: 45px;
+}
+
+.traco{
+    background-color: black;
+    border-radius: 10px;
+    height: 3px;
+    margin: 1px;
+    width: 100%;
+}
+
+.logo img{
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    margin: 10px;
+    padding:  0 0 0 5px;
+}
+
+
+header .menu{
+    align-items: center;
+    color: white;
+    justify-content: center;
+    /* margin: 10px; */
+    /* padding: 0 150px; */
+    text-decoration: none;
+    width: 100%;
+}
+
+header .acesso{
+    /* margin: 35px 720px; */
+
+}
+
+header .acesso a{
+    align-items: center;
+    background-color: steelblue;
+    border-radius: 10px;
+    color:black;
+    /* display: flex; */
+    font-size: 12pt;
+    font-weight: bold;
+    height: 5px;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.menu{
+    align-items: center;
+    background-color:  rgb(57, 134, 185);
+    height: 30px;
+    justify-content: center;
+    margin:0;
+    padding: 0;
+}
+
+.menu a{
+    align-items: center;
+    color: white;
+    justify-content: center; 
+    margin: 20px 0 0 0;
+    padding: 0 100px;
+    text-decoration: none;
+    width: 100%;
+}
+
+main{
+    background-color:white;
+    grid-area: main;
+    height: 250px;
+}
+
+.main{
+    display: flex;
+    height: 250px;
+    width: auto;
+}
+
+.frase{
+    /* align-items: center;
+    justify-content: center;
+    display: flex; */
+    margin: 0;
+    width: 50%;
+}
+
+.video{
+    align-items: center;
+    justify-content: center; 
+    display: flex;
+    width: 50%;
+}
+
+.frase p{
+    align-items: center;
+    color:black;
+    justify-content: center;
+    font-size: 30pt;
+    text-align: center;
+}
+
+.frase p:nth-child(1){
+    margin: 0.5px;
+    padding: 65px 150px 0 0;
+}
+
+.frase p:nth-child(2){
+    font-size: 25pt;
+    margin: 0.5px 0 0 0;
+    padding: 0 0 0 190px; ;
+}
+
+
+section{
+    align-items: center;
+    background-color: rgb(57, 134, 185);
+    color: white;
+    /* display: flex; */
+    /* font-size: 18pt; */
+    justify-content: center;
+    height: 292px;
+    text-align: center;
+}
+
+.sociais{
+    align-items: center;
+    background-color: rgb(57, 134, 185);
+    color: white;
+    /* display: flex; */
+    /* font-size: 18pt; */
+    justify-content: center;
+    height: 292px;
+    text-align: center;
+}
+
+.sociais p:nth-child(1){
+    font-size: 30pt;
+    margin: 15px 0 0 0;
+}
+
+#parceiros{
+    font-size: 30pt;
+    margin: 10px; 5px;
+}
+.sociais img{
+    height: 65px;
+    width: 65px;
+}
+/* div img:nth-child(1){
+    margin:20px 0 0 0 ;
+    height: 50px;
+} */
+/* 
+div img:nth-child(3){
+    height: 70px;
+    width:70px;
+    padding: 35px 0 0 0;
+}
+
+div .ig {
+    height: 55px;
+    padding: 0 0 5px 0; 
+}
+div .gmail{
+    height: 55px;
+    padding: 0 0 5px 0;
+} */
+
+
+.parceiros img:nth-child(1){
+    margin: 0 5px;
+}
+
+.parceiros img:nth-child(2){
+    height: 60px;
+    margin: 0 5px;
+    width: 90px;
+}
+.parceiros img:nth-child(3){
+    margin: 0 5px;
+    width: 90px;
+}
+.parceiros img:nth-child(4){
+    margin: 0 5px;
+    width: 190px;
+}
+.parceiros img:nth-child(5){
+    height: 50px;
+    margin: 0 5px;
+    width: 190px;
+}
+
+
+footer{
+    align-items: center;
+    background-color:rgb(87, 189, 223);
+    grid-area: footer;
+    justify-content: center;
+    height: 57.05px;
+}
+
+footer p{
+    font-size: 18pt;
+    text-align: center;                                                                       
+}
